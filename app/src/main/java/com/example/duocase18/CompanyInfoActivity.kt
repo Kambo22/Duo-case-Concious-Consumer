@@ -42,7 +42,7 @@ class CompanyInfoActivity : AppCompatActivity() {
 
         companyKFC.setOnClickListener {
 
-            val intent = Intent(this, company_page::class.java)
+            val intent = Intent(this, KFC::class.java)
             intent.putExtra("companyName", "KFC")
             intent.putExtra("companyDescription", "KFC (Kentucky Fried Chicken) is one of the world's largest fast food chains, known for its fried chicken.")
             intent.putExtra("companySector", "Fast Food")
