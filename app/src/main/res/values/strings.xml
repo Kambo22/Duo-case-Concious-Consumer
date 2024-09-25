@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">duocase18</string>
+    <string name="title_activity_company_info">CompanyInfoActivity</string>
 </resources>
