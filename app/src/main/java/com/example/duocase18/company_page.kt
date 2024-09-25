@@ -1,5 +1,6 @@
 package com.example.duocase18
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.ViewGroup
 import android.widget.ImageButton
@@ -12,6 +13,14 @@ class company_page : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_company_page)
+
+
+        val backButton = findViewById<ImageButton>(R.id.back)
+
+        backButton.setOnClickListener {
+            val intent = Intent(this, CompanyInfoActivity::class.java)
+            startActivity(intent)
+        }
 
 
         val descriptionButton = findViewById<ImageButton>(R.id.descriptionButton)
