@@ -67,9 +67,10 @@
         <!-- Company Icon -->
         <ImageView
             android:id="@+id/companyIcon"
-            android:layout_width="85dp"
-            android:layout_height="45dp"
-            android:src="@drawable/logo" />
+            android:layout_width="113dp"
+            android:layout_height="141dp"
+            android:padding="10dp"
+            android:src="@drawable/kfc" />
 
         <LinearLayout
             android:layout_width="0dp"
@@ -79,18 +80,20 @@
 
             <TextView
                 android:id="@+id/companyName"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Company"
+                android:text="KFC"
+                android:textAlignment="center"
                 android:textColor="@color/white"
-                android:textSize="18sp"
+                android:textSize="28sp"
                 android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/companyInfo"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="some brief information"
+                android:layout_height="100dp"
+                android:text="KFC (abbreviation of Kentucky Fried Chicken) is an American chain of fast food restaurants known for their fried chicken. It was started by Colonel Sanders in Corbin, Kentucky in 1952."
+                android:textAlignment="center"
                 android:textColor="@color/white"
                 android:textSize="14sp" />
 
@@ -114,9 +117,10 @@
         <!-- Company Icon -->
         <ImageView
             android:id="@+id/companyIcon2"
-            android:layout_width="85dp"
-            android:layout_height="45dp"
-            android:src="@drawable/logo" />
+            android:layout_width="98dp"
+            android:layout_height="139dp"
+            android:src="@drawable/nike"
+            android:padding="10dp"/>
 
         <LinearLayout
             android:layout_width="0dp"
@@ -126,18 +130,20 @@
 
             <TextView
                 android:id="@+id/companyName2"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Company"
+                android:text="NIKE"
+                android:textAlignment="center"
                 android:textColor="@color/white"
-                android:textSize="18sp"
+                android:textSize="28sp"
                 android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/companyInfo2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="some brief information"
+                android:text="Nike  is an American athletic footwear and apparel corporation headquartered near Beaverton, Oregon, United States.[5] It is the world's largest supplier of athletic shoes and apparel and a major manufacturer of sports"
+                android:textAlignment="center"
                 android:textColor="@color/white"
                 android:textSize="14sp" />
 
@@ -161,9 +167,10 @@
         <!-- Company Icon -->
         <ImageView
             android:id="@+id/companyIcon3"
-            android:layout_width="85dp"
-            android:layout_height="45dp"
-            android:src="@drawable/logo" />
+            android:layout_width="98dp"
+            android:layout_height="126dp"
+            android:padding="10dp"
+            android:src="@drawable/phillips" />
 
         <LinearLayout
             android:layout_width="0dp"
@@ -173,18 +180,20 @@
 
             <TextView
                 android:id="@+id/companyName3"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Company"
+                android:text="Phillips"
+                android:textAlignment="center"
                 android:textColor="@color/white"
-                android:textSize="18sp"
+                android:textSize="28sp"
                 android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/companyInfo3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="some brief information"
+                android:text="Koninklijke Philips N.V. (lit. 'Royal Philips'), commonly shortened to Philips, is a Dutch multinational conglomerate corporation that was founded in Eindhoven in 1891."
+                android:textAlignment="center"
                 android:textColor="@color/white"
                 android:textSize="14sp" />
 
