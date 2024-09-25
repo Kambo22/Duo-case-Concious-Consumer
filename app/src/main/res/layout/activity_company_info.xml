@@ -7,9 +7,10 @@
     android:layout_height="match_parent"
     android:background="#385963"
     android:orientation="vertical"
-    android:padding="16dp">
+    android:padding="16dp"
+    tools:context=".CompanyInfoActivity">
 
-    <!-- Top Layout: Toolbar with Logo and Search -->
+
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
@@ -21,14 +22,14 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5">
 
-        <!-- Logo Image -->
+
         <ImageView
             android:id="@+id/toolbarLogo"
             android:layout_width="70dp"
             android:layout_height="46dp"
             android:src="@drawable/logo" />
 
-        <!-- Search EditText -->
+
         <EditText
             android:id="@+id/etSearch"
             android:layout_width="0dp"
@@ -36,10 +37,13 @@
             android:layout_weight="1"
             android:background="@drawable/rounded_edittext_background"
             android:hint="Search"
+            android:inputType="text"
             android:padding="8dp"
-            android:textColorHint="@color/white" />
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="19sp" />
 
-        <!-- Search Button (Icon) -->
+
         <ImageButton
             android:id="@+id/btnSearch"
             android:layout_width="40dp"
@@ -51,7 +55,7 @@
 
     </LinearLayout>
 
-    <!-- First Company Block -->
+
     <LinearLayout
         android:id="@+id/linearLayout2"
         android:layout_width="match_parent"
@@ -60,11 +64,12 @@
         android:background="@drawable/rounded_company_background"
         android:orientation="horizontal"
         android:padding="16dp"
+        android:contentDescription="kfc fast food"
         app:layout_constraintTop_toBottomOf="@id/linearLayout"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
 
-        <!-- Company Icon -->
+
         <ImageView
             android:id="@+id/companyIcon"
             android:layout_width="113dp"
@@ -96,12 +101,10 @@
                 android:textAlignment="center"
                 android:textColor="@color/white"
                 android:textSize="14sp" />
-
         </LinearLayout>
-
     </LinearLayout>
 
-    <!-- Second Company Block -->
+
     <LinearLayout
         android:id="@+id/linearLayout3"
         android:layout_width="match_parent"
@@ -110,6 +113,7 @@
         android:background="@drawable/rounded_company_background"
         android:orientation="horizontal"
         android:padding="16dp"
+        android:contentDescription="nike clothing"
         app:layout_constraintTop_toBottomOf="@id/linearLayout2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
@@ -119,8 +123,8 @@
             android:id="@+id/companyIcon2"
             android:layout_width="98dp"
             android:layout_height="139dp"
-            android:src="@drawable/nike"
-            android:padding="10dp"/>
+            android:padding="10dp"
+            android:src="@drawable/nike" />
 
         <LinearLayout
             android:layout_width="0dp"
@@ -142,16 +146,14 @@
                 android:id="@+id/companyInfo2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Nike  is an American athletic footwear and apparel corporation headquartered near Beaverton, Oregon, United States.[5] It is the world's largest supplier of athletic shoes and apparel and a major manufacturer of sports"
+                android:text="Nike is an American athletic footwear and apparel corporation headquartered near Beaverton, Oregon, United States. It is the world's largest supplier of athletic shoes and apparel."
                 android:textAlignment="center"
                 android:textColor="@color/white"
                 android:textSize="14sp" />
-
         </LinearLayout>
-
     </LinearLayout>
 
-    <!-- Third Company Block -->
+
     <LinearLayout
         android:id="@+id/linearLayout4"
         android:layout_width="match_parent"
@@ -160,11 +162,12 @@
         android:background="@drawable/rounded_company_background"
         android:orientation="horizontal"
         android:padding="16dp"
+        android:contentDescription="phillips tech"
         app:layout_constraintTop_toBottomOf="@id/linearLayout3"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
 
-        <!-- Company Icon -->
+
         <ImageView
             android:id="@+id/companyIcon3"
             android:layout_width="98dp"
@@ -192,13 +195,11 @@
                 android:id="@+id/companyInfo3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Koninklijke Philips N.V. (lit. 'Royal Philips'), commonly shortened to Philips, is a Dutch multinational conglomerate corporation that was founded in Eindhoven in 1891."
+                android:text="Koninklijke Philips N.V. is a Dutch multinational conglomerate corporation that was founded in Eindhoven in 1891. Philips is focused on electronics, healthcare, and lighting products."
                 android:textAlignment="center"
                 android:textColor="@color/white"
                 android:textSize="14sp" />
-
         </LinearLayout>
-
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
