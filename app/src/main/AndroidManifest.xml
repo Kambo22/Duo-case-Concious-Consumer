@@ -13,6 +13,9 @@
         android:theme="@style/Theme.Duocase18"
         tools:targetApi="31">
         <activity
+            android:name=".ReviewConf"
+            android:exported="false" />
+        <activity
             android:name=".ReviewForm"
             android:exported="false" />
         <activity
@@ -27,7 +30,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".CompanyInfoActivity"></activity>
+        <activity android:name=".CompanyInfoActivity" />
     </application>
 
 </manifest>
