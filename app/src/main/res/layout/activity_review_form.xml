@@ -1,0 +1,135 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/activity_company_page"
+    android:background="@color/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="16dp">
+
+            <ImageView
+                android:id="@+id/logoImageView"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="8dp"
+                android:src="@drawable/logo"
+                android:contentDescription="Logo"/>
+
+            <TextView
+                android:id="@+id/titleTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Post a review ✅"
+                android:textColor="@color/headline"
+                android:textSize="30sp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="16dp">
+
+            <ImageButton
+                android:id="@+id/back"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@color/headline"
+                android:src="@drawable/back"
+                android:layout_marginStart="8dp"/>
+
+        </LinearLayout>
+
+        <!-- First Headline -->
+        <TextView
+            android:id="@+id/firstHeadline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Your Feedback"
+            android:textColor="@color/headline"
+            android:textSize="24sp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Two Checkboxes -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="16dp">
+
+            <CheckBox
+                android:id="@+id/anonymousCheckbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/headline"
+                android:textSize="20dp"
+                android:layout_marginStart="30dp"
+                android:scaleX="1.5"
+                android:scaleY="1.5"
+                android:text="Anonymous"/>
+
+            <CheckBox
+                android:id="@+id/nonAnonymousCheckbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/headline"
+                android:textSize="20dp"
+                android:layout_marginStart="42dp"
+                android:scaleX="1.5"
+                android:scaleY="1.5"
+                android:text="Non-Anonymous"/>
+        </LinearLayout>
+
+        <!-- Second Headline -->
+        <TextView
+            android:id="@+id/secondHeadline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Write your review"
+            android:textColor="@color/headline"
+            android:textSize="24sp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Input Text Field -->
+        <EditText
+            android:id="@+id/commentInputField"
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:hint="Enter your comments here"
+            android:inputType="textMultiLine"
+            android:gravity="top|start"
+            android:minLines="3"
+            android:background="@drawable/search_bar_outline"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"/>
+
+        <Button
+            android:id="@+id/postReviewButton"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Post the Review"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/headline"
+            android:textColor="@android:color/black"
+            android:padding="12dp"/>
+
+    </LinearLayout>
+</ScrollView>

@@ -3,6 +3,7 @@ package com.example.duocase18
 import android.content.Intent
 import android.os.Bundle
 import android.view.ViewGroup
+import android.widget.Button
 import android.widget.ImageButton
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
@@ -19,6 +20,13 @@ class company_page : AppCompatActivity() {
 
         backButton.setOnClickListener {
             val intent = Intent(this, CompanyInfoActivity::class.java)
+            startActivity(intent)
+        }
+
+        val postReview = findViewById<Button>(R.id.postReviewButton)
+
+        postReview.setOnClickListener {
+            val intent = Intent(this, ReviewForm::class.java)
             startActivity(intent)
         }
 
@@ -102,7 +110,6 @@ class company_page : AppCompatActivity() {
 
             isWorkEthicsExpanded = !isWorkEthicsExpanded
         }
-
 
 
 
