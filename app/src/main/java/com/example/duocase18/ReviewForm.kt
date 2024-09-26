@@ -25,7 +25,7 @@ class ReviewForm : AppCompatActivity() {
         }
 
         backButton.setOnClickListener {
-            val intent = Intent(this, company_page::class.java)
+            val intent = Intent(this, KFC::class.java)
             startActivity(intent)
         }
 
