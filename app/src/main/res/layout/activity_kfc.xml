@@ -201,13 +201,13 @@
                 <ImageView
                     android:layout_width="30dp"
                     android:layout_height="30dp"
-                    android:src="@drawable/workrating"
+                    android:src="@drawable/workratingbad"
                     android:layout_marginStart="12dp"/>
 
                 <ImageView
                     android:layout_width="30dp"
                     android:layout_height="30dp"
-                    android:src="@drawable/workrating"
+                    android:src="@drawable/workratingbad"
                     android:layout_marginStart="12dp"/>
 
 
